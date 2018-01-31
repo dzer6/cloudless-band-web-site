@@ -1,79 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CLOUDLESS band official web-site">
     <meta name="author" content="cloudless.band">
-    <meta property="og:image" content="img/background-wo-text.png">
+    <meta property="og:image" content="../img/background-wo-text.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>CLOUDLESS</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/manifest.json">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
-
     <style>
-        .background {
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-        }
-
-        .fullscreen, .content-a {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .fullscreen.overflow .content-a {
-            height: auto;
-            min-height: 100%;
-        }
-
-        .content-a {
-            display: table;
-        }
-
-        .content-b {
-            display: table-cell;
-            position: relative;
-            vertical-align: middle;
-            line-height: normal;
-        }
-
         body {
-            margin: 0;
-            font-family: sans-serif;
-            font-size: 28px;
-            line-height: 100px;
-            color: #ffffff;
-            text-align: center;
-        }
-
-        section {
-            background: #9ed100;
+            display: flex;
+            position: fixed;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .btn-youtube {
@@ -82,47 +48,61 @@
             border-color: rgba(0, 0, 0, 0.2);
         }
 
-        @font-face {
-            font-family: "Code-Light";
-            src: url("../fonts/CODE_Light.eot?") format("eot"), url("../fonts/CODE_Light.woff") format("woff"), url("../fonts/CODE_Light.ttf") format("truetype"), url("../fonts/CODE_Light.svg#Code-Light") format("svg");
-            font-weight: normal;
-            font-style: normal;
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80%;
         }
 
-        .title {
-            font-family: "Code-Light", serif;
-            font-size: 3em;
+        .btn-social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20%;
         }
 
-        .sp {
-            padding-top: 20px;
-            padding-bottom: 20px;
+        .btn-social-container a {
+            margin: 10px 5px;
         }
 
-        .desc {
-            font-size: 0.7em;
+        .video-container iframe {
+            width: 100%;
+            height: 75%;
         }
 
-        @media screen and (max-width: 991px) {
-            .fullscreen, .content-a {
-                overflow: auto;
-                padding: 50px 0;
-            }
-        }
-
-        @media screen and (max-width: 570px) {
-            .sp iframe {
-                width: 100%;
-            }
-
-            .title {
-                font-size: 2em;
+        @media (min-width: 576px) {
+            .video-container iframe {
+                width: 840px;
+                height: 472px;
             }
         }
     </style>
 </head>
-
 <body>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/8J3Bf_-d0JI" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="btn-social-container">
+    <a class="btn btn-social-icon btn-youtube"
+       href="https://www.youtube.com/channel/UCszCmz2RWVMb9IynhGcvCYg">
+        <span class="fa fa-youtube-square"></span>
+    </a>
+    <a class="btn btn-social-icon btn-soundcloud" href="https://soundcloud.com/cloudless_official">
+        <span class="fa fa-soundcloud"></span>
+    </a>
+    <a class="btn btn-social-icon btn-vk" href="https://vk.com/cloudless_music">
+        <span class="fa fa-vk"></span>
+    </a>
+    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/cloudlessband">
+        <span class="fa fa-facebook"></span>
+    </a>
+    <a class="btn btn-social-icon btn-instagram" href="https://instagram.com/cloudless_music">
+        <span class="fa fa-instagram"></span>
+    </a>
+</div>
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -145,108 +125,6 @@
         google_ad_client: "ca-pub-5176415620979264",
         enable_page_level_ads: true
     });
-</script>
-
-<div class="fullscreen background"
-     style="background-image:url('../img/background-wo-text.png');background-size: cover;">
-    <div class="content-a">
-        <div class="content-b">
-            <div class="col-sm-12">
-                <h1 class="title">CLOUDLESS</h1>
-            </div>
-            <div class="col-sm-12 sp">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VvLvFGdF0dU" frameborder="0"
-                        allowfullscreen></iframe>
-            </div>
-            <div class="col-sm-12 sp desc text-justify">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 desc text-justify">
-                        <p class="text-center">Особлива прем'єра від CLOUDLESS.</p>
-                        <br/>
-                        <br/>
-                        «Всередині» — відвертий діалог з підсвідомістю. Все ж таки внутрішній голос завжди голосніший за
-                        будь-який рок-концерт чи шум міста.
-                        Історія пісні починається ще 1,5 роки тому. Спочатку вона була англомовна та космічна, але
-                        внутрішній інстинкт та порив музикантів підказали його змінити, щоб представити перед слухачами
-                        саме в такому вигляді.
-                        <br/>
-                        <br/>
-                        «Всередині» стане останнім синглом перед виходом альбому. Поки відомо, що він складатиметься з
-                        2-х частин, перша з якого — «На землі» — буде асоціюватись з повсякденним ритмом життя,
-                        серцебиттям великого міста по його артеріях (вулицях), покаже його яскравість та тепло. Друга ж
-                        частина — «Над землею” — буде нести думки про безкінечність всесвітів, адже і всесвіт — це
-                        безкінечність життів.
-                        <br/>
-                        <br/>
-                        Євген Тютюнник (фронтмен):
-                        «Для нас буде вважатись перемогою, якщо той хто почує цей трек, стане чеснішим в першу чергу
-                        перед собою і почне слухати власне «Я», бо зараз дуже легко загубитись в просторі чужих думок,
-                        історій та життів.
-                        Важливо чути себе і не ховатись за механізмом розуму, а керувати ним.»
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 sp">
-                <a class="btn btn-social-icon btn-youtube"
-                   href="https://www.youtube.com/channel/UCszCmz2RWVMb9IynhGcvCYg">
-                    <span class="fa fa-youtube-square"></span>
-                </a>
-                <a class="btn btn-social-icon btn-soundcloud" href="https://soundcloud.com/cloudless_official">
-                    <span class="fa fa-soundcloud"></span>
-                </a>
-                <a class="btn btn-social-icon btn-vk" href="https://vk.com/cloudless_music">
-                    <span class="fa fa-vk"></span>
-                </a>
-                <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/cloudlessband">
-                    <span class="fa fa-facebook"></span>
-                </a>
-                <a class="btn btn-social-icon btn-instagram" href="https://instagram.com/cloudless_music">
-                    <span class="fa fa-instagram"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    /* resize background images */
-    function backgroundResize() {
-        var windowH = $(window).height();
-        $(".background").each(function (i) {
-            var path = $(this);
-            // variables
-            var contW = path.width();
-            var contH = path.height();
-            var imgW = path.attr("data-img-width");
-            var imgH = path.attr("data-img-height");
-            var ratio = imgW / imgH;
-            // overflowing difference
-            var diff = parseFloat(path.attr("data-diff"));
-            diff = diff ? diff : 0;
-            // remaining height to have fullscreen image only on parallax
-            var remainingH = 0;
-            if (path.hasClass("parallax")) {
-                var maxH = contH > windowH ? contH : windowH;
-                remainingH = windowH - contH;
-            }
-            // set img values depending on cont
-            imgH = contH + remainingH + diff;
-            imgW = imgH * ratio;
-            // fix when too large
-            if (contW > imgW) {
-                imgW = contW;
-                imgH = imgW / ratio;
-            }
-            //
-            path.data("resized-imgW", imgW);
-            path.data("resized-imgH", imgH);
-            path.css("background-size", imgW + "px " + imgH + "px");
-        });
-    }
-
-    $(window).resize(backgroundResize);
-    $(window).focus(backgroundResize);
-    backgroundResize();
 </script>
 </body>
 </html>

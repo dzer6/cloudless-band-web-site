@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CLOUDLESS band official web-site">
     <meta name="author" content="cloudless.band">
-    <meta property="og:image" content="../img/background-wo-text.png">
+    <meta property="og:image" content="../img/background-2018-04-17.jpg">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <style>
+        html {
+            overflow-y: auto;
+        }
+
         body {
             display: flex;
             position: fixed;
@@ -40,6 +44,31 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .album-cover-container {
+            margin-top: auto;
+            max-width: 500px;
+        }
+
+        .album-cover {
+            flex: none;
+            height: auto;
+            width: 100%;
+        }
+
+        .btn-social-container {
+            display: flex;
+            flex: none;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 93px;
+        }
+
+        .btn-social-container a {
+            margin: 10px 5px;
         }
 
         .btn-youtube {
@@ -48,37 +77,27 @@
             border-color: rgba(0, 0, 0, 0.2);
         }
 
-        .video-container {
+        .badges-container {
             display: flex;
+            flex-wrap: wrap;
+            flex: none;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 80%;
+            height: 120px;
         }
 
-        .btn-social-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 20%;
+        .badge {
+            flex: none;
+            text-decoration: none;
+            cursor: pointer;
         }
 
-        .btn-social-container a {
-            margin: 10px 5px;
+        .badge img {
+            border: 0 none;
+            width: 300px;
+            height: 116px;
         }
 
-        .video-container iframe {
-            width: 100%;
-            height: 75%;
-        }
-
-        @media (min-width: 576px) {
-            .video-container iframe {
-                width: 840px;
-                height: 472px;
-            }
-        }
     </style>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -89,8 +108,9 @@
     </script>
 </head>
 <body>
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/8J3Bf_-d0JI" frameborder="0" allowfullscreen></iframe>
+
+<div class="album-cover-container">
+    <img class="album-cover" src="../img/background-2018-04-17.jpg"/>
 </div>
 <div class="btn-social-container">
     <a class="btn btn-social-icon btn-youtube"
@@ -110,6 +130,16 @@
         <span class="fa fa-instagram"></span>
     </a>
 </div>
+<div class="badges-container">
+    <a class="badge"
+       href="https://play.google.com/store/music/album/CLOUDLESS_%D0%9C%D0%86%D0%96%D0%A1%D0%92%D0%86%D0%A2%D0%90%D0%9C%D0%98?id=Brsdxwocsiajayml37nobknc6f4">
+        <img src="../img/google-play-logo.png"/>
+    </a>
+    <a class="badge" href="https://itunes.apple.com/album/id1367800992?ls=1&app=itunes">
+        <img src="../img/itunes-logo.png"/>
+    </a>
+</div>
+
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
